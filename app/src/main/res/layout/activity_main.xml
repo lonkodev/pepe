@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 1. TextView -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:text="Widgets básicos en Android - Lonkodev 🚀"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 2. EditText -->
+        <EditText
+            android:id="@+id/edtNombre"
+            android:hint="Escribe tu nombre"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 3. Button -->
+        <Button
+            android:id="@+id/btnSeguir"
+            android:text="👉 ¡Seguir a Lonkodev!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 4. CheckBox -->
+        <CheckBox
+            android:id="@+id/chkInstagram"
+            android:text="Seguir en Instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/chkTikTok"
+            android:text="Seguir en TikTok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/chkLinkedIn"
+            android:text="Seguir en LinkedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/chkGitHub"
+            android:text="Seguir en GitHub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 5. RadioGroup + RadioButtons -->
+        <TextView
+            android:text="¿Cómo conociste a Lonkodev?"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupOrigen"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbInstagram"
+                android:text="Instagram"/>
+            <RadioButton
+                android:id="@+id/rbTikTok"
+                android:text="TikTok"/>
+            <RadioButton
+                android:id="@+id/rbClases"
+                android:text="Clases en Santo Tomás"/>
+        </RadioGroup>
+
+        <!-- 6. ProgressBar -->
+        <TextView
+            android:text="Descargando curso..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/progressLonkodev"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 7. RatingBar -->
+        <TextView
+            android:text="Califica la clase ⭐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RatingBar
+            android:id="@+id/ratingLonkodev"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 8. ImageView -->
+        <ImageView
+            android:id="@+id/imgLonkodev"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Logo Lonkodev"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+    </LinearLayout>
+</ScrollView>
